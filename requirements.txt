@@ -1,0 +1,4 @@
+torch                 2.5.1+cu121
+openai                2.21.0
+openai-whisper        20250625
+sentence-transformers 5.2.3
