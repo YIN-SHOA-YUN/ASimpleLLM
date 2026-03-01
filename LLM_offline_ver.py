@@ -7,7 +7,7 @@ import torch
 import sounddevice as sd
 import whisper
 import queue
-
+import msvcrt
 
 class audio_recognition:
     def __init__(self):
@@ -126,8 +126,8 @@ if __name__=="__main__":
     question = None
     
     while(question!="end"):
-        cmd = input("\nPress r to record, q to quit: ")
-
+        print("\nPress r to record, q to quit,other key is for text input: ")
+        cmd = msvcrt.getch().decode()
         if cmd == "q":
             break
         if cmd == "r":
